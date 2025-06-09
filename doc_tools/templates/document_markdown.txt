@@ -1,0 +1,84 @@
+# {title}
+
+{overview}
+
+## Overview
+
+{overview}
+
+## Target Audience
+
+{audience.primary}
+
+{audience.secondary}
+
+**Prerequisites:**
+{for prerequisite in audience.knowledge_prerequisites}
+- {prerequisite}
+{endfor}
+
+## Key Concepts
+
+{for concept in key_concepts}
+### {concept.name}
+
+{concept.description}
+
+{endfor}
+
+{for section in sections}
+## {section.title}
+
+{section.purpose}
+
+{for point in section.key_points}
+- {point}
+{endfor}
+
+{if section.examples}
+### Examples
+
+{for example in section.examples}
+#### Example: {example}
+
+```
+# Code example placeholder
+```
+
+{endfor}
+{endif}
+
+{if section.visuals}
+### Diagrams
+
+{for visual in section.visuals}
+*{visual}*
+
+[Diagram placeholder for: {visual}]
+
+{endfor}
+{endif}
+
+{for subsection in section.subsections}
+### {subsection.title}
+
+{subsection.purpose}
+
+{for point in subsection.key_points}
+- {point}
+{endfor}
+
+{endfor}
+{endfor}
+
+## Additional Resources
+
+{for resource in resources}
+- [{resource.title}]({resource.url}): {resource.description}
+{endfor}
+
+## Glossary
+
+{for term in glossary}
+**{term.term}**: {term.definition}
+{endfor}

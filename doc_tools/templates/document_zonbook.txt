@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="{title_id}">
+  <title>{title}</title>
+  <shortdesc>{overview}</shortdesc>
+  <body>
+    <section id="overview">
+      <title>Overview</title>
+      <p>{overview}</p>
+    </section>
+    
+    <section id="audience">
+      <title>Target Audience</title>
+      <p>{audience.primary}</p>
+      <p>{audience.secondary}</p>
+      
+      <p><b>Prerequisites:</b></p>
+      <ul>
+        {for prerequisite in audience.knowledge_prerequisites}
+        <li>{prerequisite}</li>
+        {endfor}
+      </ul>
+    </section>
+    
+    <section id="key_concepts">
+      <title>Key Concepts</title>
+      {for concept in key_concepts}
+      <p><b>{concept.name}</b>: {concept.description}</p>
+      {endfor}
+    </section>
+    
+    {for section in sections}
+    <section id="{section.title_id}">
+      <title>{section.title}</title>
+      <p>{section.purpose}</p>
+      
+      <ul>
+        {for point in section.key_points}
+        <li>{point}</li>
+        {endfor}
+      </ul>
+      
+      {if section.examples}
+      <section id="{section.title_id}_examples">
+        <title>Examples</title>
+        {for example in section.examples}
+        <p><b>Example: {example}</b></p>
+        <codeblock>
+# Code example placeholder
+        </codeblock>
+        {endfor}
+      </section>
+      {endif}
+      
+      {if section.visuals}
+      <section id="{section.title_id}_diagrams">
+        <title>Diagrams</title>
+        {for visual in section.visuals}
+        <p><i>{visual}</i></p>
+        <p>[Diagram placeholder for: {visual}]</p>
+        {endfor}
+      </section>
+      {endif}
+      
+      {for subsection in section.subsections}
+      <section id="{section.title_id}_{subsection.title_id}">
+        <title>{subsection.title}</title>
+        <p>{subsection.purpose}</p>
+        
+        <ul>
+          {for point in subsection.key_points}
+          <li>{point}</li>
+          {endfor}
+        </ul>
+      </section>
+      {endfor}
+    </section>
+    {endfor}
+    
+    <section id="resources">
+      <title>Additional Resources</title>
+      <ul>
+        {for resource in resources}
+        <li><xref href="{resource.url}" scope="external">{resource.title}</xref>: {resource.description}</li>
+        {endfor}
+      </ul>
+    </section>
+    
+    <section id="glossary">
+      <title>Glossary</title>
+      {for term in glossary}
+      <p><b>{term.term}</b>: {term.definition}</p>
+      {endfor}
+    </section>
+  </body>
+</topic>

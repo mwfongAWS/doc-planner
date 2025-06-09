@@ -1,0 +1,330 @@
+{
+  "title": "AWS Feature X Documentation",
+  "overview": {
+    "summary": "AWS Feature X is a new service that allows customers to automatically process and analyze data using AI capabilities.",
+    "primary_use_case": "Processing large volumes of data efficiently without managing infrastructure.",
+    "problem_solved": "Eliminates the need for customers to build and maintain complex data processing pipelines."
+  },
+  "personas": [
+    {
+      "name": "Developer",
+      "description": "Application developers who need to integrate data processing capabilities into their applications.",
+      "key_tasks": [
+        "Integrate Feature X API into applications",
+        "Configure processing options",
+        "Handle job results and errors"
+      ],
+      "benefits": [
+        "Reduced development time",
+        "No infrastructure to manage",
+        "Scalable processing capabilities"
+      ],
+      "prerequisites": [
+        "Basic AWS knowledge",
+        "Familiarity with RESTful APIs",
+        "Understanding of data processing concepts"
+      ]
+    },
+    {
+      "name": "Data Scientist",
+      "description": "Data scientists who need to process and analyze large datasets.",
+      "key_tasks": [
+        "Prepare data for processing",
+        "Configure analysis options",
+        "Interpret and visualize results"
+      ],
+      "benefits": [
+        "Focus on insights rather than infrastructure",
+        "Faster time to results",
+        "Integration with other AWS analytics services"
+      ],
+      "prerequisites": [
+        "Understanding of data formats",
+        "Basic AWS knowledge",
+        "Statistical analysis skills"
+      ]
+    },
+    {
+      "name": "Solutions Architect",
+      "description": "Architects who design solutions using AWS services.",
+      "key_tasks": [
+        "Evaluate Feature X for customer use cases",
+        "Design architectures incorporating Feature X",
+        "Optimize cost and performance"
+      ],
+      "benefits": [
+        "Simplified architecture",
+        "Reduced operational overhead",
+        "Improved scalability"
+      ],
+      "prerequisites": [
+        "Advanced AWS knowledge",
+        "System design experience",
+        "Understanding of data processing architectures"
+      ]
+    }
+  ],
+  "key_concepts": [
+    {
+      "name": "Processing Job",
+      "description": "A unit of work that processes a dataset according to specified configuration."
+    },
+    {
+      "name": "Data Source",
+      "description": "The location of the input data, typically an S3 bucket."
+    },
+    {
+      "name": "Processing Options",
+      "description": "Configuration parameters that control how data is processed."
+    },
+    {
+      "name": "Output Location",
+      "description": "The destination where processed results are stored."
+    },
+    {
+      "name": "Job Status",
+      "description": "The current state of a processing job (e.g., PENDING, RUNNING, COMPLETED, FAILED)."
+    }
+  ],
+  "content_structure": [
+    {
+      "title": "What is AWS Feature X?",
+      "section_id": "what-is",
+      "purpose": "Introduce Feature X and its key capabilities.",
+      "key_points": [
+        "Overview of Feature X",
+        "Key benefits and use cases",
+        "How it works at a high level"
+      ],
+      "examples": [],
+      "visuals": ["Feature X architecture diagram"],
+      "subsections": []
+    },
+    {
+      "title": "Getting Started with Feature X",
+      "section_id": "getting-started",
+      "purpose": "Help users quickly set up and run their first processing job.",
+      "key_points": [
+        "Prerequisites",
+        "Setting up permissions",
+        "Creating your first job"
+      ],
+      "examples": [
+        {
+          "type": "console",
+          "description": "Creating a job through the AWS Management Console"
+        },
+        {
+          "type": "cli",
+          "description": "Creating a job using the AWS CLI"
+        }
+      ],
+      "visuals": ["Console screenshot of job creation form"],
+      "subsections": [
+        {
+          "title": "Setting Up Permissions",
+          "section_id": "permissions",
+          "purpose": "Guide users through required IAM permissions.",
+          "key_points": [
+            "Required IAM policies",
+            "Service role configuration",
+            "Cross-service permissions"
+          ]
+        },
+        {
+          "title": "Your First Processing Job",
+          "section_id": "first-job",
+          "purpose": "Step-by-step guide to create and monitor a job.",
+          "key_points": [
+            "Configuring job parameters",
+            "Submitting the job",
+            "Monitoring progress",
+            "Accessing results"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Feature X API Reference",
+      "section_id": "api-reference",
+      "purpose": "Provide detailed API documentation for developers.",
+      "key_points": [
+        "API endpoints",
+        "Request and response formats",
+        "Error handling"
+      ],
+      "examples": [
+        {
+          "type": "sdk",
+          "description": "Creating a job using the AWS SDK for Python"
+        },
+        {
+          "type": "sdk",
+          "description": "Creating a job using the AWS SDK for JavaScript"
+        }
+      ],
+      "visuals": [],
+      "subsections": [
+        {
+          "title": "Jobs API",
+          "section_id": "jobs-api",
+          "purpose": "Document the jobs API endpoints.",
+          "key_points": [
+            "CreateJob operation",
+            "GetJob operation",
+            "ListJobs operation",
+            "CancelJob operation"
+          ]
+        },
+        {
+          "title": "Error Handling",
+          "section_id": "error-handling",
+          "purpose": "Guide developers on handling API errors.",
+          "key_points": [
+            "Common error codes",
+            "Retry strategies",
+            "Best practices"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security and Compliance",
+      "section_id": "security",
+      "purpose": "Address security considerations and compliance information.",
+      "key_points": [
+        "Data encryption",
+        "IAM integration",
+        "VPC support",
+        "Compliance certifications"
+      ],
+      "examples": [],
+      "visuals": ["Security architecture diagram"],
+      "subsections": []
+    },
+    {
+      "title": "Best Practices",
+      "section_id": "best-practices",
+      "purpose": "Provide guidance on optimal use of Feature X.",
+      "key_points": [
+        "Performance optimization",
+        "Cost optimization",
+        "Error handling",
+        "Monitoring and logging"
+      ],
+      "examples": [],
+      "visuals": [],
+      "subsections": []
+    }
+  ],
+  "interactive_elements": {
+    "tutorials": [
+      "Processing your first dataset",
+      "Integrating Feature X with other AWS services",
+      "Building a serverless data processing pipeline"
+    ],
+    "code_samples": [
+      "Basic job creation and monitoring",
+      "Error handling and retries",
+      "Processing results handling"
+    ],
+    "screenshots": [
+      "Job creation console",
+      "Job monitoring dashboard",
+      "Results viewer"
+    ],
+    "cli_examples": [
+      "Creating a job",
+      "Listing active jobs",
+      "Retrieving job results"
+    ]
+  },
+  "cross_references": [
+    {
+      "service": "Amazon S3",
+      "description": "Used for storing input data and processing results",
+      "url": "https://docs.aws.amazon.com/s3/"
+    },
+    {
+      "service": "AWS Lambda",
+      "description": "Can be used to trigger processing jobs or handle job completion events",
+      "url": "https://docs.aws.amazon.com/lambda/"
+    },
+    {
+      "service": "Amazon EventBridge",
+      "description": "Can be used to automate workflows based on job status changes",
+      "url": "https://docs.aws.amazon.com/eventbridge/"
+    },
+    {
+      "service": "Amazon Bedrock",
+      "description": "Powers the AI capabilities of Feature X",
+      "url": "https://docs.aws.amazon.com/bedrock/"
+    }
+  ],
+  "security_compliance": {
+    "security_considerations": [
+      "Data is encrypted at rest using AWS KMS",
+      "Data is encrypted in transit using TLS",
+      "Access control is managed through IAM",
+      "VPC endpoints are supported for enhanced network security"
+    ],
+    "compliance_requirements": [
+      "GDPR compliant",
+      "HIPAA eligible",
+      "SOC 2 compliant",
+      "PCI DSS compliant"
+    ]
+  },
+  "resources": [
+    {
+      "title": "Feature X Workshop",
+      "description": "Hands-on workshop for learning Feature X",
+      "url": "https://workshops.aws/feature-x",
+      "type": "workshop"
+    },
+    {
+      "title": "Sample Applications",
+      "description": "GitHub repository with sample applications using Feature X",
+      "url": "https://github.com/aws-samples/feature-x-samples",
+      "type": "code"
+    },
+    {
+      "title": "Feature X Deep Dive",
+      "description": "Technical deep dive blog post",
+      "url": "https://aws.amazon.com/blogs/aws/feature-x-deep-dive",
+      "type": "blog"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Processing Job",
+      "definition": "A unit of work that processes a dataset according to specified configuration."
+    },
+    {
+      "term": "Data Source",
+      "definition": "The location of the input data, typically an S3 bucket."
+    },
+    {
+      "term": "Processing Options",
+      "definition": "Configuration parameters that control how data is processed."
+    },
+    {
+      "term": "Job Status",
+      "definition": "The current state of a processing job (e.g., PENDING, RUNNING, COMPLETED, FAILED)."
+    }
+  ],
+  "improvement_suggestions": [
+    {
+      "suggestion": "Add a dedicated troubleshooting section",
+      "rationale": "Users often need help diagnosing and resolving common issues."
+    },
+    {
+      "suggestion": "Expand the API reference with more code examples",
+      "rationale": "Developers learn better with concrete examples in multiple programming languages."
+    },
+    {
+      "suggestion": "Create a separate section for integration patterns",
+      "rationale": "Many users will want to integrate Feature X with other AWS services in common patterns."
+    }
+  ]
+}
