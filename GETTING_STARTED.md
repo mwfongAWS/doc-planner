@@ -1,6 +1,6 @@
-# Getting Started with AWS Documentation Tools
+# Getting Started with AWS Documentation Planner
 
-This guide will walk you through setting up and testing the AWS Documentation Tools for technical writers. Follow these steps to create your first AI-assisted documentation project.
+This guide will walk you through setting up and testing the AWS Documentation Planner for technical writers. Follow these steps to create your first AI-assisted documentation project.
 
 ## Prerequisites
 
@@ -13,12 +13,12 @@ Before you begin, make sure you have:
 
 ## Step 1: Installation
 
-First, install the AWS Documentation Tools package:
+First, install the AWS Documentation Planner package:
 
 ```bash
 # Clone the repository
-git clone https://github.com/aws/aws-doc-tools.git
-cd aws-doc-tools
+git clone https://github.com/aws/doc-planner.git
+cd doc-planner
 
 # Install the package in development mode
 pip install -e .
@@ -158,7 +158,7 @@ If you're using VSCode:
 
 1. Install the Amazon Q extension
 2. Open your workspace folder
-3. The AWS Documentation Tools will integrate with VSCode, allowing you to:
+3. The AWS Documentation Planner will integrate with VSCode, allowing you to:
    - Generate content plans
    - Edit and refine documentation
    - Access AI assistance directly in your editor

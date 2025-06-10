@@ -1,5 +1,5 @@
 #!/bin/bash
-# Test workflow script for AWS Documentation Tools
+# Test workflow script for AWS Documentation Planner
 # This script demonstrates a complete end-to-end workflow
 
 # Exit on error
@@ -10,11 +10,11 @@ S3_BUCKET="my-test-bucket"  # Replace with your S3 bucket name
 QUIP_API_TOKEN=""           # Replace with your Quip API token (optional)
 
 # Create a test directory
-TEST_DIR="$(pwd)/aws-doc-tools-test"
+TEST_DIR="$(pwd)/aws-doc-planner-test"
 mkdir -p "$TEST_DIR"
 cd "$TEST_DIR"
 
-echo "=== AWS Documentation Tools Test Workflow ==="
+echo "=== AWS Documentation Planner Test Workflow ==="
 echo "Working directory: $TEST_DIR"
 
 # Step 1: Create a sample resource file
@@ -103,7 +103,7 @@ EOL
 echo "Sample files created."
 
 # Step 2: Set up the tool
-echo -e "\n=== Setting up AWS Documentation Tools ==="
+echo -e "\n=== Setting up AWS Documentation Planner ==="
 echo "Note: This step will be interactive. Please follow the prompts."
 aws-doc-tools setup
 

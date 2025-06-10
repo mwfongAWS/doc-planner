@@ -1,13 +1,13 @@
-# AWS Documentation Tools Examples
+# AWS Documentation Planner Examples
 
-This directory contains examples and test scripts for the AWS Documentation Tools.
+This directory contains examples and test scripts for the AWS Documentation Planner.
 
 ## Test Workflow Script
 
-The `test_workflow.sh` script demonstrates a complete end-to-end workflow using AWS Documentation Tools. It:
+The `test_workflow.sh` script demonstrates a complete end-to-end workflow using AWS Documentation Planner. It:
 
 1. Creates sample resource files (design document and API spec)
-2. Sets up the AWS Documentation Tools
+2. Sets up the AWS Documentation Planner
 3. Creates a knowledge base
 4. Uploads resources to the knowledge base
 5. Generates a content plan
@@ -19,7 +19,7 @@ The `test_workflow.sh` script demonstrates a complete end-to-end workflow using 
 
 Before running the script:
 
-1. Install AWS Documentation Tools (`pip install -e .` from the project root)
+1. Install AWS Documentation Planner (`pip install -e .` from the project root)
 2. Configure AWS credentials with access to Amazon Bedrock
 3. Edit the script to set your S3 bucket name and Quip API token (optional)
 
@@ -59,6 +59,6 @@ aws-doc-tools export-to-quip examples/sample_content_plan.json --api-token "YOUR
 
 ## Notes
 
-- The test workflow script creates files in a subdirectory of your current directory (`aws-doc-tools-test`)
+- The test workflow script creates files in a subdirectory of your current directory (`aws-doc-planner-test`)
 - You'll need to have appropriate permissions for the S3 bucket you specify
 - The Quip API token is optional, but required if you want to test the Quip export functionality

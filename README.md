@@ -1,10 +1,10 @@
-# AWS Documentation Tools
+# AWS Documentation Planner
 
 An end-to-end interactive and iterative writer + AI experience tool for technical writers working at AWS.
 
 ## Overview
 
-AWS Documentation Tools provides a comprehensive solution for technical writers at AWS to create high-quality documentation with AI assistance. The tool integrates with Amazon Bedrock foundation models and Knowledge Bases to provide context-aware content generation.
+AWS Documentation Planner provides a comprehensive solution for technical writers at AWS to create high-quality documentation with AI assistance. The tool integrates with Amazon Bedrock foundation models and Knowledge Bases to provide context-aware content generation.
 
 ## Features
 
@@ -25,8 +25,8 @@ For a complete step-by-step guide to get started, see [GETTING_STARTED.md](GETTI
 
 ```bash
 # Clone the repository
-git clone https://github.com/aws/aws-doc-tools.git
-cd aws-doc-tools
+git clone https://github.com/aws/doc-planner.git
+cd doc-planner
 
 # Install the package
 pip install -e .
@@ -109,7 +109,7 @@ aws-doc-tools export-to-quip content-plan.json --api-token "YOUR_QUIP_API_TOKEN"
 
 ## Complete Workflow
 
-A typical workflow using AWS Documentation Tools:
+A typical workflow using AWS Documentation Planner:
 
 1. Set up the tool and AWS credentials
 2. Create a knowledge base for your project
@@ -157,5 +157,4 @@ For more detailed troubleshooting, check the logs in `~/.aws-doc-tools/logs/aws-
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.# mwfong-doc-planner
-# doc-planner
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
